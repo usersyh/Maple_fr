@@ -1,0 +1,101 @@
+.container-main{
+      /* 페이지 중앙 정렬 */
+  margin: 0 auto;
+  /* 단위로 em이나 rem을 쓰는게 좋다고 들었음 */
+  margin-top: 1rem;
+  width: 90%;
+  background-color: #fff;
+  /* 그림자 */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  /* 테두리 둥글게 */
+  border-radius: 20px;
+}
+
+.server{
+  padding: 10px;
+}
+
+.server-btn{
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+
+
+.container-drop{
+  padding: 1%;
+  padding-top: 0;
+}
+
+.first-option{
+    background-color: #A30FE2;
+    color: white;
+    margin-right: 1%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.container-ranking{
+  margin: 0 auto;
+  /* 단위로 em이나 rem을 쓰는게 좋다고 들었음 */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 90%;
+  background-color: #fff;
+  /* 그림자 */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  /* 테두리 둥글게 */
+  border-radius: 20px;
+}
+
+
+.total-group{
+  min-height: 68vh;
+  /* background-color: rgb(241, 183, 183); */
+}
+
+.container-ranking {
+  /* width: 100%; */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container-ranking table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container-ranking th,
+.container-ranking td {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+  text-align: left;
+  color: gray;
+  
+}
+
+.container-ranking tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.container-ranking th {
+  background-color: #B90000;
+  color: white;
+}
+
+.container-ranking td{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 18px;
+  /* width: 3%; */
+  max-width: 5em;
+}
+
+.container-ranking span{
+  padding-left: 8%;
+  /* position: absolute; */
+}
+

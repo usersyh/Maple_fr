@@ -1,0 +1,18 @@
+.btn-world{
+    display: inline-flex;
+  align-items: center;
+  margin-right: 1%;
+  border: initial;
+  border-radius: 11px;
+  background-color: 	#CD3861;
+}
+
+.p-world{
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+.btn-world:hover{
+  background-color:#B90000;
+}

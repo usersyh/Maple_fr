@@ -1,0 +1,96 @@
+#navbar{
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.me-auto{
+    margin: auto;
+}
+
+.navbar-logo{
+    
+        position: absolute;
+        left: 14%;
+        top: -30px;
+}
+
+.img-logo{
+    width: 200px;
+}
+
+/* .me-auto .nav-link{
+    padding-left:;
+}  */
+
+#nav-link {
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+
+
+.mapleflakes-btn{
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.mapleflakes-btn:hover{
+    border: 2px solid #e66868;
+}
+
+
+@media screen and (max-width: 1350px){
+    .navbar-logo {
+        position: absolute; /* 절대 위치 지정 */
+        left: 7px; /* 왼쪽 여백 설정 */
+        
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .navbar-logo {
+        position: absolute; /* 절대 위치 지정 */
+        left: 7px; /* 왼쪽 여백 설정 */
+        
+    }
+
+    /* .img-logo{
+        width: 150px;
+    } */
+
+    .container .me-auto {
+        padding-left: 10px; /* 메뉴 아이템과 로고 간격 조정 */
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+    .navbar .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .navbar-logo {
+        /* position: relative; 
+        width: 100%; */
+        text-align: center; 
+        height: 9vh;
+        width: 18vh;
+        top: -9%;
+    }
+
+    .img-logo{
+        /* width: 100%; */
+        display: inline-block; 
+    }
+
+    #nav-link {
+        padding-left: 0px; 
+        padding-right: 18px; 
+    }
+
+    .container .me-auto{
+        padding-left: 20%;
+    }
+    
+}
+

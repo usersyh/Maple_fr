@@ -1,0 +1,31 @@
+#input-group{
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    top: 40%;
+}
+
+#main-input-group{
+    width: 30%;
+    top: 20%;
+    margin: auto;
+    margin-top: 80px;
+    
+}
+
+#main-button-addon2{
+    background-color: gray;
+    color: white;
+}
+
+#main-button-addon2:hover{
+    background-color: black;
+}
+
+
+
+@media screen and (max-width: 740px) {
+    #main-input-group {
+        width: 60%; /* 또는 더 큰 값으로 조정 */
+    }
+}
