@@ -14,7 +14,7 @@ import useMapleflakeStore from '../store/mapleflakes';
 function NavBar() {
   const location = useLocation();
   const [mainPage, setMainPage] = useState(location.pathname === '/home');
-  const {isShow, change} =  useMapleflakeStore();
+  const {change} =  useMapleflakeStore();
 
   useEffect(() => {
     setMainPage(location.pathname === '/home');
@@ -23,11 +23,14 @@ function NavBar() {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark" id='navbar'>
-        <Nav.Link as={Link} to='/home' className='navbar-logo'>
+       {!mainPage && <Nav.Link as={Link} to='/home' className='navbar-logo logo-padding'>
           <Image className='img-logo img-fluid' src={logo} alt="메이플 로고" rounded />
-        </Nav.Link>
+        </Nav.Link>}
+        {mainPage &&  <Nav.Link as={Link} to='/home' className='navbar-logo'>
+          <Image className='img-logo img-fluid' src={logo} alt="메이플 로고" rounded />
+        </Nav.Link>}
         {!mainPage && <SearchBar size='header'/>}
-        <Container>
+        <Container id='container'>
           <Nav className="me-auto">
             <Nav.Link as={Link} to='/totalRanking' id='nav-link'>전체 랭킹</Nav.Link>
             <Nav.Link as={Link} to='/mulungRanking' id='nav-link'>무릉도장 랭킹</Nav.Link>
@@ -36,7 +39,7 @@ function NavBar() {
         </Container>
         {mainPage && 
         <div className='mapleflakes-btn' onClick={change} aria-label='낙엽효과 켜기'>
-          <MapleIcon></MapleIcon>
+          <MapleIcon/>
         </div>}
       </Navbar>
     </>
